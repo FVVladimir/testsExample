@@ -5,6 +5,8 @@ Feature: Change button name
   @focus
  
   Scenario: Change button name
+
+    Given I go to the testing page
     
      When I type some in iput field and press button
     

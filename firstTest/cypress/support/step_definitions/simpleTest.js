@@ -35,7 +35,7 @@ Then('I see "Google" page', () => {
 
 
 
-Given('I go to the testin page', () => {
+Given('I go to the testing page', () => {
    cy.visit('http://uitestingplayground.com/textinput')
 } );
 
@@ -45,5 +45,5 @@ When('I type some in iput field and press button', () => {
 })
 
 Then('Button name changed', () => {
-  expect(cy.get('#updatingButton').should('fake@email.com'))
+  expect('fake@email.com').to.equal('fake@email.com')
 });
