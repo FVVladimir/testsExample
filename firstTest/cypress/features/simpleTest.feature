@@ -9,3 +9,5 @@ Feature: Google Main Page
     Given I open "Google" page
     
     Then I see "Google" page
+
+    Then I type ss in input field

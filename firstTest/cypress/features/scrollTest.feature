@@ -6,6 +6,6 @@ Feature: Find a hiden button
 
  Scenario: Finde hiden  button
 
-    Given I go to the testing page
+    Given I go to the hiden page
 
     Then I scroll and find hiden button

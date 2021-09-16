@@ -33,6 +33,10 @@ Then('I see "Google" page', () => {
   expect('"Google" page').to.equal('"Google" page')
 });
 
+Then('I type ss in input field', () => {
+  cy.get('input.gLFyf').type('ss').click();
+})
+
 
 
 Given('I go to the testing page', () => {

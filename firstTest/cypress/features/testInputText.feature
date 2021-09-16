@@ -6,7 +6,7 @@ Feature: Change button name
  
   Scenario: Change button name
 
-    Given I go to the testing page
+    Given I go to the change page
     
      When I type some in iput field and press button
     

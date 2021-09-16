@@ -1,4 +1,9 @@
-Given('I go to the testing page', () => {
+const {
+  Given,
+  Then
+} = require("cypress-cucumber-preprocessor/steps");
+
+Given('I go to the hiden page', () => {
     cy.visit('http://uitestingplayground.com/scrollbars')
   })
   
