@@ -10,4 +10,4 @@ Feature: Google Main Page
     
     Then I see "Google" page
 
-    Then I type ss in input field
+    Then I type sss in input field

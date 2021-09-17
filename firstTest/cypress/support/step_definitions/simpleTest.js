@@ -33,21 +33,8 @@ Then('I see "Google" page', () => {
   expect('"Google" page').to.equal('"Google" page')
 });
 
-Then('I type ss in input field', () => {
-  cy.get('input.gLFyf').type('ss').click();
-})
-
-
-
-Given('I go to the testing page', () => {
-   cy.visit('http://uitestingplayground.com/textinput')
-} );
-
-When('I type some in iput field and press button', () => {
-  cy.get('input').type('fake@email.com');  
-  cy.get('#updatingButton').click();
-})
-
-Then('Button name changed', () => {
-  expect('fake@email.com').to.equal('fake@email.com')
+Then('I type sss in input field', () => {
+  cy.get('input.gLFyf').type('sss').type('{enter}')
+  cy.get('div#fbar').scrollIntoView().should('be.visible')
+  // setTimeout(cy.get('input.gLFyf').scrollIntoView().should('be.visible'), 5000)
 });
